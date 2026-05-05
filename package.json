@@ -24,10 +24,9 @@
     "@radix-ui/react-select": "^2.0.0",
     "@radix-ui/react-slider": "^1.1.2",
     "@radix-ui/react-slot": "^1.0.2",
-    "@types/bcrypt": "^5.0.2",
     "@types/qs": "^6.9.15",
     "axios": "^1.6.8",
-    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.376.0",
@@ -39,7 +38,7 @@
     "react": "^18",
     "react-dadata": "^2.23.1",
     "react-dom": "^18",
-    "react-hook-form": "^7.51.5",
+    "react-hook-form": "^7.75.0",
     "react-hot-toast": "^2.4.1",
     "react-insta-stories": "^2.7.0",
     "react-use": "^17.5.0",
@@ -52,6 +51,7 @@
     "zustand": "^4.5.2"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
