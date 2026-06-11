@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="23d6144f-725a-451a-bbec-c03ee7300aa8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(checkout)/checkout/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(checkout)/checkout/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/components/shared/address-input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/components/shared/address-input.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
