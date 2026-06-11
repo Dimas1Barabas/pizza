@@ -56,7 +56,7 @@ export default function CheckoutPage() {
       setSubmitting(true);
 
       const url = await createOrder(data);
-
+      //TODO 18 38 52
       toast.error('Заказ успешно оформлен! 📝 Переход на оплату... ', {
         icon: '✅',
       });
