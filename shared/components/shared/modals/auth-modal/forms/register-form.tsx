@@ -8,6 +8,7 @@ import { registerUser } from '@/app/actions';
 import { TFormRegisterValues, formRegisterSchema } from './schemas';
 import { FormInput } from '../../../form';
 import { Button } from '@/shared/components/ui';
+import {Title} from '@/shared/components';
 
 interface Props {
   onClose?: VoidFunction;
@@ -48,6 +49,13 @@ export const RegisterForm: React.FC<Props> = ({ onClose, onClickLogin }) => {
   return (
     <FormProvider {...form}>
       <form className="flex flex-col gap-5" onSubmit={form.handleSubmit(onSubmit)}>
+        <div className="flex justify-between items-center">
+          <div className="mr-2">
+            <Title text="Регистрация аккаунта" size="md" className="font-bold" />
+            <p className="text-gray-400">Зарегистрируйтесь и закажите пиццу</p>
+          </div>
+          <img src="/logo.png" alt="phone-icon" width={60} height={60} />
+        </div>
         <FormInput name="email" label="E-Mail" required />
         <FormInput name="fullName" label="Полное имя" required />
         <FormInput name="password" label="Пароль" type="password" required />
