@@ -44,6 +44,11 @@ export default function CheckoutPage() {
       form.setValue('firstName', firstName);
       form.setValue('lastName', lastName);
       form.setValue('email', data.email);
+
+      /* Подставляем телефон из последнего заказа, если он есть */
+      if (data.phone) {
+        form.setValue('phone', data.phone);
+      }
     }
 
     if (session) {

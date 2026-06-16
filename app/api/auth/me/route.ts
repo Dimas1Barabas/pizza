@@ -24,7 +24,24 @@ export async function GET() {
       },
     });
 
-    return NextResponse.json(data);
+    if (!data) {
+      return NextResponse.json({ message: 'Пользователь не найден' }, { status: 404 });
+    }
+
+    /* Берём телефон из последнего заказа этого пользователя (связь по email) */
+    const lastOrder = await prisma.order.findFirst({
+      where: {
+        email: data.email,
+      },
+      orderBy: {
+        createdAt: 'desc',
+      },
+      select: {
+        phone: true,
+      },
+    });
+
+    return NextResponse.json({ ...data, phone: lastOrder?.phone ?? '' });
   } catch (error) {
     console.log(error);
     return NextResponse.json({ message: '[USER_GET] Server error' }, { status: 500 });
