@@ -7,8 +7,6 @@ import { TFormRegisterValues, formRegisterSchema } from './modals/auth-modal/for
 import { User } from '@prisma/client';
 import toast from 'react-hot-toast';
 import { signOut } from 'next-auth/react';
-import { Container } from './container';
-import { Title } from './title';
 import { FormInput } from './form';
 import { Button } from '../ui';
 import { updateUserInfo } from '@/app/actions';
@@ -53,31 +51,27 @@ export const ProfileForm: React.FC<Props> = ({ data }) => {
   };
 
   return (
-    <Container className="my-10">
-      <Title text={`Личные данные | #${data.id}`} size="md" className="font-bold" />
+    <FormProvider {...form}>
+      <form className="flex flex-col gap-5 w-96" onSubmit={form.handleSubmit(onSubmit)}>
+        <FormInput name="email" label="E-Mail" required />
+        <FormInput name="fullName" label="Полное имя" required />
 
-      <FormProvider {...form}>
-        <form className="flex flex-col gap-5 w-96 mt-10" onSubmit={form.handleSubmit(onSubmit)}>
-          <FormInput name="email" label="E-Mail" required />
-          <FormInput name="fullName" label="Полное имя" required />
+        <FormInput type="password" name="password" label="Новый пароль" required />
+        <FormInput type="password" name="confirmPassword" label="Повторите пароль" required />
 
-          <FormInput type="password" name="password" label="Новый пароль" required />
-          <FormInput type="password" name="confirmPassword" label="Повторите пароль" required />
+        <Button disabled={form.formState.isSubmitting} className="text-base mt-10" type="submit">
+          Сохранить
+        </Button>
 
-          <Button disabled={form.formState.isSubmitting} className="text-base mt-10" type="submit">
-            Сохранить
-          </Button>
-
-          <Button
-            onClick={onClickSignOut}
-            variant="secondary"
-            disabled={form.formState.isSubmitting}
-            className="text-base"
-            type="button">
-            Выйти
-          </Button>
-        </form>
-      </FormProvider>
-    </Container>
+        <Button
+          onClick={onClickSignOut}
+          variant="secondary"
+          disabled={form.formState.isSubmitting}
+          className="text-base"
+          type="button">
+          Выйти
+        </Button>
+      </form>
+    </FormProvider>
   );
 };
