@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23d6144f-725a-451a-bbec-c03ee7300aa8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/(root)/not-found.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/error.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/404.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/auth/verify/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/auth/verify/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/components/shared/modals/auth-modal/forms/register-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/components/shared/modals/auth-modal/forms/register-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/components/shared/stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/components/shared/stories.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="23d6144f-725a-451a-bbec-c03ee7300aa8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,6 +133,29 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
